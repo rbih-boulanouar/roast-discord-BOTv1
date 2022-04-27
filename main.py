@@ -17,3 +17,4 @@ async def roastme(ctx):
     await ctx.send(str(content[random.randint(0, 170)]))  
 
 client.run("TOKEN")
+print(4)
