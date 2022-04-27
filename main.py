@@ -11,10 +11,12 @@ content = f.readlines()
 @client.event
 async def on_ready():
     print("bot online") 
+@client.command()
+async def help(ctx):
+    await ctx.send("use the command !roastme")  
 
 @client.command()
 async def roastme(ctx):
     await ctx.send(str(content[random.randint(0, 170)]))  
 
 client.run("TOKEN")
-print(4)
